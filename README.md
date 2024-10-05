@@ -44,7 +44,7 @@ sudo systemctl enable postgresql
 
 ## step 4- Access the Zabbix Frontend
 ```
-http://server_ip/zabbix
+http://server_ip
 ```
 After successful configuration, log in with the default credentials: Admin and zabbix.
 
@@ -73,7 +73,6 @@ use this guide: https://www.zabbix.com/download?zabbix=7.0&os_distribution=ubunt
 
 ## step 7- Monitoring Disk Usage of Zabbix Agent:
 
-![Alt text](screenshots/diskusage.png)
 
 1. Create a new item on the Zabbix Agent host that monitors disk usage.
 
@@ -83,9 +82,12 @@ use this guide: https://www.zabbix.com/download?zabbix=7.0&os_distribution=ubunt
 
     - You can monitor disk usage data in the Zabbix interface by viewing the latest data or creating graphs to track disk usage over time.
 
+
+![Alt text](screenshots/diskusage.png)
+
+
 ## step 8-Monitoring Cloudflare DNS Availability:
 
-![Alt text](screenshots/cloudflare.png)
 
 1. Create a new item that sends ping requests to the Cloudflare DNS server (1.1.1.1).
 
@@ -94,3 +96,5 @@ use this guide: https://www.zabbix.com/download?zabbix=7.0&os_distribution=ubunt
 2. Visualize the data:
 
     - You can monitor the availability of the DNS data in the Zabbix interface by viewing the latest data or creating graphs to track the item over time.
+
+![Alt text](screenshots/cloudflare.png)
